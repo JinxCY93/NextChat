@@ -1,0 +1,22 @@
+#chat-container {
+  width: 80%;
+  height: 80vh;
+  padding: 20px;
+  overflow-y: scroll;
+  box-sizing: border-box;
+  border: 1px solid grey;
+}
+
+.chat-message {
+  background-color: white;
+  max-width: 50%;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: Arial;
+  box-shadow: 0px 0px 10px grey;
+}
+
+.chat-message p {
+  font-weight: bold;
+}

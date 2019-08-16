@@ -1,0 +1,14 @@
+<div>
+  <form [formGroup]="messageForm" (ngSubmit)="onSubmit()">
+    <input formControlName="text" type="text" placeholder="Type your message here" id='text-form' />
+    <input type="submit" value="Send" id='button' />
+  </form>
+  <div *ngIf="hasSubmitted">
+    <p *ngIf="errors().minlength">
+      You must enter at least 20 characters
+    </p>
+    <p *ngIf="errors().maxlength">
+      You can only enter up to 255 characters
+    </p>
+  </div>
+</div>
